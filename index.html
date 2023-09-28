@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types Example</title>
+</head>
+<body><center>
+    <div class="container" id="cont1">
+    <h1 style="color: green"><u>Data Types Example</u></h1>
+    
+    
+    <button id="displayString">String</button>
+    <button id="displayNumber">Number</button>
+    <button id="displayBoolean">Boolean</button>
+    <button id="displayArray">Array</button>
+    <button id="displayObject">Object</button>
+   
+    
+    
+    <div>
+        <p style="font-size: 30; color: yellow; font-style: italic">String Value: <span id="stringValue"></span></p>
+        <p style="font-size: 30; color: yellow; font-style: italic">Number Value: <span id="numberValue"></span></p>
+        <p style="font-size: 30; color: yellow; font-style: italic">Boolean Value: <span id="booleanValue"></span></p>
+        <p style="font-size: 30; color: yellow; font-style: italic">Array Value: <span id="arrayValue"></span></p>
+        <p style="font-size: 30; color: yellow; font-style: italic">Object Value: <span id="objectValue"></span></p>
+    </div>
+ </div>
+    <script>
+        // JavaScript code to handle click events and display values
+        document.getElementById("displayString").addEventListener("click", function() {
+            const stringValue = "Kasturi";
+            document.getElementById("stringValue").textContent = stringValue;
+        });
+
+        document.getElementById("displayNumber").addEventListener("click", function() {
+            const numberValue = 9492365292;
+            document.getElementById("numberValue").textContent = numberValue;
+        });
+
+        document.getElementById("displayBoolean").addEventListener("click", function() {
+            const booleanValue = true;
+            document.getElementById("booleanValue").textContent = booleanValue;
+        });
+
+        document.getElementById("displayArray").addEventListener("click", function() {
+            const arrayValue = [0,1, 2, 3, 4, 5];
+            document.getElementById("arrayValue").textContent = JSON.stringify(4);
+        });
+
+        document.getElementById("displayObject").addEventListener("click", function() {
+            const objectValue = { name: "Yokahith", age: 3 };
+            document.getElementById("objectValue").textContent = JSON.stringify(objectValue);
+        });
+    </script></center>
+</body>
+    <style>
+        button{
+            font-size: 25;
+            font-family: fantasy;
+            color: brown;
+            background-color: aqua;
+            width: 150px;
+            height: 70px;
+            border-radius: 5px 10px 7px;
+        }
+        
+    
+        
+     .container{
+         height: 500px;
+         width: 800px;
+        border: 5px solid red;
+        background-color: palevioletred;
+        padding: 30px;
+        margin: 30px auto;
+    }
+    </style>
+</html>
